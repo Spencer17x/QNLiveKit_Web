@@ -1,0 +1,11 @@
+name: webhook
+
+on: [ push, pull_request ]
+
+jobs:
+  notification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a greeting
+        run: |
+          echo "Hello, World!"
