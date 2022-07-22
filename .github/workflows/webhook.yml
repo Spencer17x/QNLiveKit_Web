@@ -6,9 +6,9 @@ jobs:
   notification:
     runs-on: ubuntu-latest
     steps:
-      - name: Print a greeting
+      - name: webhook
         run: |
-          curl 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=693axxx6-7aoc-4bc4-97a0-0ec2sifa5aaa' \
+          curl ${{ secrets.WEBHOOK }} \
           -H 'Content-Type: application/json' \
           -d '
           {
