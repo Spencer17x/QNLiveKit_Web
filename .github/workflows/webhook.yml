@@ -15,9 +15,9 @@ jobs:
             "msgtype": "markdown",
             "markdown": {
                 "content": "通知\n
-                 >repo: <font color=\"comment\">[${{github.repository}}](${{github.repositoryUrl}})</font>
-                 >branch: <font color=\"comment\">[${{github.ref_name}}](${{github.repositoryUrl}})</font>
-                 >commit id: <font color=\"comment\">[${{github.sha}}](${{github.repositoryUrl}})</font>
-                 >commit message: <font color=\"comment\">[${{github.event.head_commit.message}}](${{github.repositoryUrl}})</font>"
+                 >repo: <font color=\"comment\">[${{github.repository}}](https://github.com/${{github.repository}})</font>
+                 >branch: <font color=\"comment\">[${{github.ref_name}}](https://github.com/${{github.repository}})</font>
+                 >commit id: <font color=\"comment\">[${{github.sha}}](https://github.com/${{github.repository}})</font>
+                 >commit message: <font color=\"comment\">[${{github.event.head_commit.message}}](https://github.com/${{github.repository}})</font>"
             }
           }'
