@@ -12,8 +12,11 @@ jobs:
           -H 'Content-Type: application/json' \
           -d '
           {
-            "msgtype": "text",
-            "text": {
-              "content": "hello world"
+            "msgtype": "markdown",
+            "markdown": {
+                "content": "通知\n
+                 >仓库: <font color=\"comment\">{{github.repository}}</font>
+                 >分支: <font color=\"comment\">{{github.ref_name}}</font>
+                 >推送消息: <font color=\"comment\">{{github.event.head_commit.message}}</font>"
             }
           }'
